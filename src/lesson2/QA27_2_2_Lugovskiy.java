@@ -5,18 +5,17 @@ import java.util.Scanner;
 public class QA27_2_2_Lugovskiy {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите номер месяца: ");
-        int mNum = scanner.nextInt();
-        String Season = "Пора года, ";
-        if (mNum > 11 && mNum < 13 || mNum > 0 && mNum < 3)
-            System.out.println(Season + "Зима");
-         else if (mNum > 2 && mNum < 6)
-            System.out.println(Season + "Весна");
-         else if (mNum > 5 && mNum < 9)
-            System.out.println(Season + "Лето");
-         else if (mNum > 8 && mNum < 12)
-            System.out.println(Season + "Осень");
-         else
-            System.out.println("Неправильный номер месяца");
+        System.out.print("Введите вашу температуру: ");
+        int t = scanner.nextInt();
+        final int NORMAL_T = -5;
+        final int COLD_T = -20;
+        if ( t > NORMAL_T )
+            System.out.println("Тепло");
+        else if (t <= NORMAL_T && t > COLD_T)
+            System.out.println("Нормально");
+        else if (t <= COLD_T )
+            System.out.println("Холодно");
+        else
+            System.out.println("Неправильно введена температура");
     }
 }
