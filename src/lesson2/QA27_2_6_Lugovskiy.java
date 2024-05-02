@@ -20,5 +20,8 @@ public class QA27_2_6_Lugovskiy {
         else {
             System.out.println("Вы ввели некоректные значения");
         }
+        scanner.close();
+        scannerTwo.close();
+        scannerFree.close();
     }
 }

@@ -16,5 +16,6 @@ public class QA27_2_1c_Lugovskiy {
             case 6 -> System.out.println("Это Июнь");
             default -> System.out.println("Неправильный номер месяца");
         }
+        scanner.close();
     }
 }

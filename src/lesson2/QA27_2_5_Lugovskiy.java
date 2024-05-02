@@ -11,5 +11,6 @@ public class QA27_2_5_Lugovskiy {
         for (int num = 1; num <= serialNum; num++)
             sumN = sumN + num;
         System.out.println("Сумма всех чисел от 1 до n : " + sumN);
+        scanner.close();
     }
 }

@@ -33,5 +33,6 @@ public class QA27_2_1a_Lugovskiy {
                 System.out.println("Неправильный номер месяца");
                 break;
         }
+        scanner.close();
     }
 }

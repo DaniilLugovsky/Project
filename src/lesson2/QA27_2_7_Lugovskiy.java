@@ -18,5 +18,6 @@ public class QA27_2_7_Lugovskiy {
             n1=n2;
         }
         System.out.println(" - Данные числа");
+        scanner.close();
     }
 }

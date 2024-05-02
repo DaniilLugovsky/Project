@@ -17,5 +17,6 @@ public class QA27_2_2_Lugovskiy {
             System.out.println("Холодно");
         else
             System.out.println("Неправильно введена температура");
+        scanner.close();
     }
 }

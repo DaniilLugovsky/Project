@@ -18,5 +18,6 @@ public class QA27_2_1b_Lugovskiy {
             System.out.println(Season + "Осень");
          else
             System.out.println("Неправильный номер месяца");
+        scanner.close();
     }
 }
