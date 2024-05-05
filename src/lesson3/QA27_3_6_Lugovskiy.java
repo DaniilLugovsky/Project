@@ -9,8 +9,8 @@ import java.util.Random;
 public class QA27_3_6_Lugovskiy {
     public static void main(String[] args) {
         Random random = new Random();
-        int length = random.nextInt(20);
-        int[] array = new int[length];
+        int arrayLength = random.nextInt(20);
+        int[] array = new int[arrayLength];
         for (int i = 0; i < array.length; i++)
             array[i] = random.nextInt(20);
         System.out.println("Массив - " + Arrays.toString(array));
