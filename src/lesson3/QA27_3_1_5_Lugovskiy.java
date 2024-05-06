@@ -13,12 +13,13 @@ public class QA27_3_1_5_Lugovskiy {
     public static void main(String[] args) {
         int[] array = new int[40];
         Random random = new Random();
-        for (int w = 0; w < array.length; w++)
-            array[w] = random.nextInt(20);
+        for (int i = 0; i < array.length; i++)
+            array[i] = random.nextInt(20);
         System.out.println("Массив до изменения : " + Arrays.toString(array));
-        for (int a = 0; a < array.length; a++)
-            if( array[a] % 2 == 0)
-                array[a] = 0;
+        for (int j = 0; j < array.length; j++) {
+            if (array[j] % 2 == 0)
+                array[j] = 0;
+        }
         System.out.println("Массив после внесения изменений : " + Arrays.toString(array));
     }
 }

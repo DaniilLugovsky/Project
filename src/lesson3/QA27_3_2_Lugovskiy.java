@@ -30,17 +30,17 @@ public class QA27_3_2_Lugovskiy{
             Random random = new Random();
             for (int i = 0; i < firstArray.length; i++)
                 firstArray[i] = random.nextInt(20);
-            System.out.print("Массив - ");
-            System.out.println(Arrays.toString(firstArray));
+            System.out.println("Массив - " + Arrays.toString(firstArray));
             int minimumArrayElement = firstArray[0];
             for (int i = 1; i < firstArray.length; i++)
                 if (firstArray[i] < minimumArrayElement)
                     minimumArrayElement = firstArray[i];
             System.out.println("Минимальное значение элемента в массиве " + minimumArrayElement);
             int maximumArrayElement = firstArray[0];
-            for (int i = 0; i < firstArray.length; i++)
+            for (int i = 0; i < firstArray.length; i++) {
                 if (firstArray[i] >= maximumArrayElement)
                     maximumArrayElement = firstArray[i];
+            }
             System.out.println("Максимальное значение элемента в массиве " + maximumArrayElement);
             int sumOfElements = 0;
             for (int i = 0; i < firstArray.length; i++)
@@ -48,16 +48,18 @@ public class QA27_3_2_Lugovskiy{
             double firstArithmeticMean = (double) sumOfElements / firstArray.length;
             System.out.println("Среднее арихметическое значение элементов в массиве " + firstArithmeticMean);
             int lengthOfTheSecondArray = 0;
-            for (int i = 0; i < firstArray.length; i++)
-                if(firstArray[i] % 2 == 0 && firstArray[i] != 0)
-                    lengthOfTheSecondArray ++;
+            for (int i = 0; i < firstArray.length; i++) {
+                if (firstArray[i] % 2 == 0 && firstArray[i] != 0)
+                    lengthOfTheSecondArray++;
+            }
             int[] secondArray = new int[lengthOfTheSecondArray];
             int index = 0;
-            for (int i = 0; i < firstArray.length; i++)
-                if(firstArray[i] % 2 == 0 && firstArray[i] != 0) {
+            for (int i = 0; i < firstArray.length; i++) {
+                if (firstArray[i] % 2 == 0 && firstArray[i] != 0) {
                     secondArray[index] = firstArray[i];
                     index++;
                 }
+            }
             System.out.println(Arrays.toString(secondArray) + " - Массив созданный из чётных элементов первого массива");
             scanner.close();
         }

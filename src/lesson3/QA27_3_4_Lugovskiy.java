@@ -33,16 +33,18 @@ public class QA27_3_4_Lugovskiy {
             firstArray[i] = random.nextInt(20);
         System.out.println("Первый массив - " + Arrays.toString(firstArray));
         int lengthOfTheSecondArray = 0;
-        for (int i = 0; i < firstArray.length; i++)
-            if(firstArray[i] % 2 == 0 && firstArray[i] != 0)
-                lengthOfTheSecondArray ++;
+        for (int i : firstArray) {
+            if (i % 2 == 0 && i != 0)
+                lengthOfTheSecondArray++;
+        }
         int[] secondArray = new int[lengthOfTheSecondArray];
         int index = 0;
-        for (int i = 0; i < firstArray.length; i++)
-            if(firstArray[i] % 2 == 0 && firstArray[i] != 0){
-                secondArray[index] = firstArray[i];
+        for (int i : firstArray) {
+            if (i % 2 == 0 && i != 0) {
+                secondArray[index] = i;
                 index++;
             }
+        }
         System.out.println("Второй массив - " + Arrays.toString(secondArray) + " : созданный из чётных элементов первого массива");
         scanner.close();
     }
