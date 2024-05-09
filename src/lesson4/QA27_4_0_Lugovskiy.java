@@ -13,7 +13,7 @@ public class QA27_4_0_Lugovskiy {
     public static void main(String[] args) {
         int[][][] multiArray = new int[5][5][5];
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число на каторое, хотитите увеличить все еденицы многомерного массива : ");
+        System.out.print("Введите число на которое, хотите увеличить все единицы многомерного массива : ");
         int increase = scanner.nextInt();
         for (int i = 0; i < multiArray.length; i++) {
                 for (int j = 0; j < multiArray[i].length; j++) {

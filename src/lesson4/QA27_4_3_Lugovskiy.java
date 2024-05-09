@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Random;
 public class QA27_4_3_Lugovskiy {
     public static void main(String[] args) {
-        int[][] twoDimensionalArray = new int[9][9];
+        int[][] twoDimensionalArray = new int[8][8];
         Random random = new Random();
         for (int i = 0; i < twoDimensionalArray.length; i++) {
             for (int j = 0; j < twoDimensionalArray[i].length; j++)

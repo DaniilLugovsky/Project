@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class QA27_4_1_Lugovskiy {
     public static void main(String[] args) {
         char[][] chessBoard = new char[8][8];
-        System.out.println(" - Шахматная доска - ");
+        System.out.println("  - Шахматная доска -  ");
         for (int i = 0; i < chessBoard.length; i++) {
             if (i % 2 == 0) {
                 for (int j = 0; j < chessBoard[i].length; j++) {

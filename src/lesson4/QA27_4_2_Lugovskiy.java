@@ -22,6 +22,6 @@ public class QA27_4_2_Lugovskiy {
             for (int j = 0; j < twoDimensionalArray[i].length; j++)
                 sumOfArrayElements += twoDimensionalArray[i][j];
         }
-        System.out.println("Сумма элементов двумерного массива : " + sumOfArrayElements);
+        System.out.println("Сумма всех элементов двумерного массива :  " + sumOfArrayElements);
     }
 }
