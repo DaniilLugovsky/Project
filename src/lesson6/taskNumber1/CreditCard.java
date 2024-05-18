@@ -5,13 +5,18 @@ import java.util.Random;
 public class CreditCard {
     private final int id;
     private static int nextId = 0;
-    private final String accountNumber;
+    private String accountNumber;
     private double accountAmount = 10;
 
 
-
     public CreditCard(){
+        creatingAnAccountNumber();
         this.id = ++nextId;
+        System.out.println("A new bank user has been created, Account number " + accountNumber);
+        System.out.println();
+    }
+
+    private void creatingAnAccountNumber(){
         Random random = new Random();
         int one = random.nextInt(8999)+1000;
         int two = random.nextInt(8999)+1000;
@@ -22,8 +27,6 @@ public class CreditCard {
         String strNumberFree = String.valueOf(free);
         String strNumberFour = String.valueOf(four);
         accountNumber = (strNumberOne +" "+ strNumberTwo +" "+ strNumberFree +" "+ strNumberFour);
-        System.out.println("A new bank user has been created, Account number " + accountNumber);
-        System.out.println();
     }
     void replenishment (double topUpAmount){
         accountAmount += topUpAmount;
