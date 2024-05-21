@@ -1,6 +1,6 @@
 package lesson7.taskNumber1;
 
-public class Rectangle extends Figures {
+public class Rectangle extends Figure {
     private double length;
     private double width;
 

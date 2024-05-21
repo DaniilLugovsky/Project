@@ -61,7 +61,7 @@ public class Livingspace {
     }
     void info(){
         System.out.println("-------Living space data-------");
-        System.out.println("Rectangle - " + square + " square meters");
+        System.out.println("Square - " + square + " square meters");
         System.out.println("Price : " + price + " $");
         System.out.println("Id - " + id);
         if (owner == null)

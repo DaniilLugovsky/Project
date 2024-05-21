@@ -1,6 +1,6 @@
 package lesson7.taskNumber1;
 
-public abstract class Figures {
+public abstract class Figure {
     private double square;
     private double perimeter;
     private String name;

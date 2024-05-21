@@ -1,7 +1,7 @@
 package lesson7.taskNumber1;
 
 
-public class Cirkle extends Figures {
+public class Circle extends Figure {
     private double radius;
 
     public double getRadius() {
@@ -12,13 +12,13 @@ public class Cirkle extends Figures {
         this.radius = radius;
     }
 
-    public Cirkle(double radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 
     @Override
     public String getName() {
-        return "Cirkle";
+        return "Circle";
     }
 
     @Override

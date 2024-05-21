@@ -1,6 +1,6 @@
 package lesson7.taskNumber1;
 
-public class Triangle extends Figures {
+public class Triangle extends Figure {
 
     private double length;
     private double height;
