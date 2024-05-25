@@ -1,6 +1,6 @@
 package lesson8.taskNumber1;
 
-public enum TypesOfDegrees {
+public enum TypeOfDegrees {
     F,
     C,
     K;
