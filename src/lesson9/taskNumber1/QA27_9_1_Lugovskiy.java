@@ -8,11 +8,11 @@ import java.util.Scanner;
 public class QA27_9_1_Lugovskiy{
     public static void main(String[] args) {
         System.out.print("Enter the number of animals : ");
-        Animal[] animal = new Animal[0];
+        Animal[] animals = new Animal[0];
         while (true) {
-            Scanner scanner1 = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             try {
-                animal = new Animal[scanner1.nextInt()];
+                animals = new Animal[scanner.nextInt()];
             } catch (NegativeArraySizeException e) {
                 System.out.println("Array length cannot be negative");
                 continue;
@@ -22,8 +22,8 @@ public class QA27_9_1_Lugovskiy{
             }
                 break;
         }
-        for (int i = 0; i < animal.length; i++) {
-            animal[i] = getNextAnimal();
+        for (int i = 0; i < animals.length; i++) {
+            animals[i] = getNextAnimal();
         }
         System.out.println("Enter an action for animals to perform");
         int choise;
@@ -46,7 +46,7 @@ public class QA27_9_1_Lugovskiy{
             }
             break;
         }
-        for (Animal value : animal) {
+        for (Animal value : animals) {
             switch (choise) {
                 case 0 -> value.walk();
                 case 1 -> value.say();
